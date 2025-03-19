@@ -447,7 +447,7 @@ body {
     color: #ff774b;
   }
 
-  &.memberSection__memberName--aiboshi {
+  &.memberSection__memberName--takaki {
     color: #4cd098;
   }
 
@@ -455,16 +455,16 @@ body {
     color: #0070ce;
   }
 
-  &.memberSection__memberName--ohtsuki {
+  &.memberSection__memberName--nagakura {
     color: #ff6f6f;
   }
 
-  &.memberSection__memberName--takizawa {
+  &.memberSection__memberName--tanabe {
     color: #6fb1ff;
   }
 
-  &.memberSection__memberName--aida {
-    color: #6fb1ff;
+  &.memberSection__memberName--otsu {
+    color: #d24ef6;
   }
 }
 
