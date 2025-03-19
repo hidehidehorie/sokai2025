@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Nosutaru";
+  src: url("fonts/Nosutaru-dotMPlusH-10-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #021030;
+}
+
+.top {
+  text-align: center;
+}
+
+.topMessage {
+  margin-bottom: 40px;
+  color: white;
+  font-family: "Nosutaru", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 240%;
+}
+
+.topIcon {
+  display: inline-flex;
+}
+
+.animation {
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 2s;
+  width: 128px;
+}
+
+.fadein {
+  animation-name: fadeIn;
+  animation-direction: normal;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

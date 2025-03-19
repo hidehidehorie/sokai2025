@@ -1,0 +1,518 @@
+@font-face {
+  font-family: "Nosutaru";
+  src: url("../fonts/Nosutaru-dotMPlusH-10-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Nosutaru", sans-serif;
+}
+
+.wrapper {
+  overflow-x: clip;
+}
+
+.sectionContainer {
+  width: 100%;
+  max-width: 500px;
+  padding-inline: 28px;
+  margin-inline: auto;
+}
+
+.topSection__wrapper {
+  padding-bottom: 20vh;
+  height: 120vh;
+  background-color: #000a22;
+}
+
+.topSection {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.topSection__message {
+  display: block;
+  line-height: 2.4;
+  font-size: 1.5rem;
+  word-wrap: break-word;
+}
+
+.topSection__icon {
+  position: absolute;
+  top: 80vh;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: flash 1.2s ease-in-out infinite;
+}
+
+@keyframes flash {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+.messageSection {
+  padding: 60px 0 72px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(180deg, #000a22 0%, #013662 100%);
+  text-align: center;
+  color: white;
+}
+
+.messageSection__message {
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.messageSection__paragraph {
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+  line-height: 2.8;
+  letter-spacing: 0.04em;
+  text-indent: 0.04em;
+}
+
+.messageSection__stickyContainerWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.messageSection__background {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  z-index: -1;
+}
+
+.messageSection__star {
+  position: absolute;
+
+  /* left */
+  &.messageSection__star--shootingStar1 {
+    top: 2%;
+    left: 6%;
+  }
+
+  &.messageSection__star--shootingStar2 {
+    top: 5.5%;
+    left: 8%;
+  }
+
+  &.messageSection__star--shootingStar3 {
+    top: 6%;
+    left: 2%;
+  }
+
+  &.messageSection__star--starLeft1 {
+    top: 11%;
+    left: 4%;
+  }
+
+  &.messageSection__star--starLeft2 {
+    top: 14%;
+    left: 9%;
+  }
+
+  &.messageSection__star--starLeft3 {
+    top: 20%;
+    left: 4%;
+  }
+
+  &.messageSection__star--starLeft4 {
+    top: 23%;
+    left: 11%;
+  }
+
+  &.messageSection__star--starLeft5 {
+    top: 24%;
+    left: 1%;
+  }
+
+  &.messageSection__star--starLeft6 {
+    top: 29%;
+    left: 6%;
+  }
+
+  &.messageSection__star--starLeft7 {
+    top: 36%;
+    left: 8%;
+  }
+
+  &.messageSection__star--starLeft8 {
+    top: 38%;
+    left: 4%;
+  }
+
+  &.messageSection__star--starLeft9 {
+    top: 42%;
+    left: 9%;
+  }
+
+  &.messageSection__star--starLeft10 {
+    top: 49%;
+    left: 6%;
+  }
+
+  &.messageSection__star--starLeft11 {
+    top: 55%;
+    left: 7%;
+  }
+
+  &.messageSection__star--starLeft12 {
+    top: 58%;
+    left: 5%;
+  }
+
+  &.messageSection__star--starLeft13 {
+    top: 64%;
+    left: 2%;
+  }
+
+  &.messageSection__star--starLeft14 {
+    top: 69%;
+    left: 7%;
+  }
+
+  &.messageSection__star--starLeft15 {
+    top: 73%;
+    left: 9%;
+  }
+
+  &.messageSection__star--starLeft16 {
+    top: 77%;
+    left: 6%;
+  }
+
+  &.messageSection__star--starLeft17 {
+    top: 82%;
+    left: 11%;
+  }
+
+  &.messageSection__star--starLeft18 {
+    top: 85%;
+    left: 6%;
+  }
+
+  /* right */
+  &.messageSection__star--starRight1 {
+    top: 2%;
+    right: 10%;
+  }
+
+  &.messageSection__star--moonStar {
+    top: 4%;
+    right: 4%;
+  }
+
+  &.messageSection__star--starRight2 {
+    top: 9%;
+    right: 6%;
+  }
+
+  &.messageSection__star--starRight3 {
+    top: 14%;
+    right: 7%;
+  }
+
+  &.messageSection__star--starRight4 {
+    top: 17%;
+    right: 9%;
+  }
+
+  &.messageSection__star--planet {
+    top: 20%;
+    right: 1%;
+  }
+
+  &.messageSection__star--starRight5 {
+    top: 29%;
+    right: 10%;
+  }
+
+  &.messageSection__star--starRight6 {
+    top: 31%;
+    right: 3%;
+  }
+
+  &.messageSection__star--starRight7 {
+    top: 36%;
+    right: 10%;
+  }
+
+  &.messageSection__star--starRight8 {
+    top: 38%;
+    right: 4%;
+  }
+
+  &.messageSection__star--starRight9 {
+    top: 43%;
+    right: 9%;
+  }
+
+  &.messageSection__star--starRight10 {
+    top: 49%;
+    right: 3%;
+  }
+
+  &.messageSection__star--starRight11 {
+    top: 55%;
+    right: 10%;
+  }
+
+  &.messageSection__star--starRight12 {
+    top: 62%;
+    right: 7%;
+  }
+
+  &.messageSection__star--starRight13 {
+    top: 68%;
+    right: 2%;
+  }
+
+  &.messageSection__star--starRight14 {
+    top: 74%;
+    right: 8%;
+  }
+
+  &.messageSection__star--starRight15 {
+    top: 81%;
+    right: 10%;
+  }
+
+  &.messageSection__star--starRight16 {
+    top: 84%;
+    right: 3%;
+  }
+}
+
+.messageSection__partyWrapper {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.messageSection__blur {
+  width: 120%;
+  height: 100px;
+  position: absolute;
+  bottom: -20px;
+  background: linear-gradient(180deg, #000a22 0%, #013662 100%);
+  background-size: 100% 500%;
+  background-repeat: no-repeat;
+  animation: change-blur-color auto linear forwards;
+  animation-timeline: scroll();
+  filter: blur(10px);
+}
+
+@keyframes change-blur-color {
+  15% {
+    background-position: 0% 0%;
+  }
+  96% {
+    background-position: 0% 360%;
+  }
+}
+
+.messageSection__party {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 4px;
+  position: absolute;
+  bottom: -4px;
+  animation: move-party auto linear;
+  animation-timeline: scroll();
+
+  img {
+    width: auto;
+    height: 36px;
+  }
+}
+
+@keyframes move-party {
+  0% {
+    transform: translateX(-250%);
+  }
+  100% {
+    transform: translateX(400%);
+  }
+}
+
+.interval {
+  height: 96px;
+  background-color: #013662;
+}
+
+.memberSection {
+  padding-block: 32px;
+  position: relative;
+  background-color: white;
+  color: #021030;
+  z-index: 2;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 640px;
+    height: 640px;
+    position: absolute;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  &::before {
+    top: -84px;
+  }
+
+  &::after {
+    bottom: -84px;
+  }
+}
+
+.memberSection__title {
+  text-align: center;
+  font-size: 1.625rem;
+  letter-spacing: 0.21em;
+  text-indent: 0.29em;
+}
+
+.memberSection__subTitle {
+  display: block;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 0.75rem;
+  text-indent: 0.1em;
+}
+
+.memberSection__members {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.memberSection__member {
+  display: flex;
+  gap: 24px;
+}
+
+.memberSection__memberCircle {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  &.memberSection__memberCircle--yellow {
+    background-color: #fff16f;
+  }
+
+  &.memberSection__memberCircle--blue {
+    background-color: #8deaff;
+  }
+}
+
+.memberSection__memberBody {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.memberSection__memberName {
+  font-size: 1rem;
+  line-height: 1;
+  letter-spacing: 3.2px;
+
+  &.memberSection__memberName--sakai {
+    color: #ff774b;
+  }
+
+  &.memberSection__memberName--aiboshi {
+    color: #4cd098;
+  }
+
+  &.memberSection__memberName--horie {
+    color: #0070ce;
+  }
+
+  &.memberSection__memberName--ohtsuki {
+    color: #ff6f6f;
+  }
+
+  &.memberSection__memberName--takizawa {
+    color: #6fb1ff;
+  }
+
+  &.memberSection__memberName--aida {
+    color: #6fb1ff;
+  }
+}
+
+.memberSection__memberPosition {
+  color: #013662;
+  font-size: 0.625rem;
+  line-height: 1;
+}
+
+.memberSection__memberMessage {
+  color: #013662;
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+.bottomSection__outerWrapper {
+  background: linear-gradient(180deg, #013662 0%, #1e6eab 31%, #fff7b1 100%);
+}
+
+.bottomSection__innerWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  min-height: 100svh;
+}
+
+.bottomSection__interval {
+  height: 400px;
+}
+
+.bottomSection {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: white;
+}
+
+.bottomSection__message {
+  display: block;
+  line-height: 2.4;
+  font-size: 1.5rem;
+  word-wrap: break-word;
+}
+
+.footer {
+  text-align: center;
+  color: #021030;
+  font-size: 0.875rem;
+}
